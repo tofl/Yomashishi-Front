@@ -20,12 +20,12 @@
     <div id="description">
       <div class="page">
         <p class="title">Stay tuned 🔔</p>
-        <p class="send-email-description">
+        <p class="send-email-description padding-30">
           I'm Tom, an independent developer. This is a really basic MVP, and I intend to keep working on it. Lots of new features are coming up!
           <br /><br />
-          Feel free to subscribe to my mailing list to stay up to date on the latest features (promise I won't give you address to anyone).
+          Feel free to subscribe to my mailing list to stay up to date on the latest features (promise I won't give your address to anyone).
         </p>
-        <Subscribe></Subscribe>
+        <Subscribe class="padding-30"></Subscribe>
       </div>
     </div>
 
@@ -57,6 +57,9 @@ export default {
   * {
     margin: 0;
     padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   body {
@@ -84,6 +87,7 @@ export default {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 3em;
+    padding-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -132,9 +136,12 @@ export default {
   }
 
   .send-email-description {
-    padding: 10px;
     text-align: justify;
     line-height: 25px;
     font-size: 1.2em;
+  }
+
+  .padding-30 {
+    padding: 30px;
   }
 </style>
